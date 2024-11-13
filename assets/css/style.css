@@ -11,6 +11,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.encabezado-seccion {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
 a {
 	color: #3CF;
   text-decoration: none;
@@ -346,4 +351,121 @@ p {
 
 #reunion-presencial {
   background-color: #0a1a33;
+}
+
+/**/
+
+/* Características */
+
+section.caracteristicas .col-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.publicacion-caracteristicas {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.miniatura-caracteristicas {
+  overflow: hidden;
+  position: relative;
+}
+
+.miniatura-caracteristicas img {
+  width: 100%;
+}
+
+.contenido-caracteristicas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0c1228;
+  color: #fff;
+  padding: 40px;
+}
+
+.contenido-caracteristicas:hover {
+  background-color: #f5a425;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+.contenido-caracteristicas h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.contenido-caracteristicas h4 i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.contenido-caracteristicas p {
+  margin-bottom: 0px;
+}
+
+.contenido-caracteristicas a {
+  margin-top: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 2px solid #fff;
+}
+
+.contenido-caracteristicas p.oculto-sm {
+  display: none;
+}
+
+.segunda-caracteristica,
+.tercera-caracteristica {
+  border-left: 1px solid rgba(250,250,250,0.1);
+}
+
+.contenido-ocultar {
+  margin-top: 15px;
+  display: none;
+}
+
+.contenido-ocultar p {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+
+.contenido-caracteristicas {
+  padding: 15px;
+}
+.contenido-caracteristicas h4 i {
+  display: block;
+  margin-bottom: 10px;
+}
+.contenido-caracteristicas h4 {
+  font-size: 14px;
+}
+.contenido-caracteristicas p {
+  display: none;
+}
+.contenido-caracteristicas p.oculto-sm {
+  display: block;
+}
+.contenido-caracteristicas a {
+  letter-spacing: 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+  .caracteristicas { background-color: #0c1228; }
+  .contenido-caracteristicas { position: relative; }
+  .publicacion-caracteristicas { border-left: 0 }
 }
