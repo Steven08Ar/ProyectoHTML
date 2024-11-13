@@ -195,7 +195,7 @@ p {
 
 /**/
 
-/* Buttons */
+/* Boton principal */
 
 .boton-principal a {
   background-color: #f5a425;
@@ -436,7 +436,7 @@ nav[role="navigation"] li.active a {
 
 /**/
 
-/* Características */
+/* Características 
 
 section.caracteristicas .col-4 {
   padding-left: 0px;
@@ -551,105 +551,40 @@ section.caracteristicas .col-4 {
   .publicacion-caracteristicas { border-left: 0 }
 }
 
+*/
+
+.bloque {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0c1228;
+  color: #fff;
+  padding: 40px;
+}
+
 /* ¿Por qué elegirnos? */
 
 section.porque-nosotros {
-  background-image: url(../images/choosing-bg.jpg);
   background-color: #172238;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 100px;
 }
 
+section.porque-nosotros img {
+  width: 200px;
+  height: 100px;
+}
+
 .pestanas {
   text-align: center;
-}
-
-.pestanas ul {
-  margin: 0;
-  padding: 0;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 0;
-  -moz-column-gap: 0;
-  column-gap: 0;
-}
-
-.pestanas ul::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.pestanas ul li {
-  display: block;
-  font-weight: 400;
-  font-size: 1.2em;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.pestanas ul li a {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  cursor: pointer;
-  outline: 0;
-  padding-bottom: 30px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.pestanas ul li a:after {
-  transition: all 0.3s;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 0;
-}
-
-.pestanas ul li a:before {
-  transition: all 0.3s;
-  width: 25px;
-  height: 25px;
-  border: 2px solid transparent;
-  background-color: transparent;
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: -5px;
-}
-
-.pestanas ul li span {
-  display: block;
-  margin-bottom: 0.75em;
-}
-
-.pestanas ul .ui-tabs-active a {
-  color: #f5a425;
-}
-
-.pestanas ul .ui-tabs-active a:after {
-  background-color: #f5a425;
-  width: 15px;
-  height: 15px;
-}
-
-.pestanas ul .ui-tabs-active a:before {
-  border-color: #f5a425;
+  margin-bottom: 70px;
 }
 
 .pestanas h4 {
   margin-top: 60px;
+  text-align: center;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -659,13 +594,14 @@ section.porque-nosotros {
 
 .pestanas p {
   color: #fff;
-  font-size: 15px;
+  text-align: center;
+  font-size: 19px;
   line-height: 28px;
 }
 
 .contenido-pestanas {
   margin-top: 60px;
-  text-align: left;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
